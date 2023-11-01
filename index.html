@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Saya</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Animasi CSS */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h {
+            animation: blink 2s infinite; /* Menggunakan animasi 'blink' selama 2 detik secara berulang */
+    </style>
+    <style>
+        /* Animasi CSS */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            animation: blink 2s infinite; /* Menggunakan animasi 'blink' selama 2 detik secara berulang */
+    </style>
+      <style>
+        /* Animasi CSS */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            animation: blink 4s infinite; /* Menggunakan animasi 'blink' selama 2 detik secara berulang */
+        }
+    </style>
+<style>
+        /* Animasi CSS */
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h3 {
+            animation: blink 6s infinite; /* Menggunakan animasi 'blink' selama 2 detik secara berulang */
+        }
+    </style>
+    
+</head>
+<body>
+  <div class="bitcoin-container">
+    <h><i class="fab fa-bitcoin"></i> Bitcoin Price:</h>
+    <p id="bitcoin-price">$loading...</p>
+  </div>
+  <img src="lokasi_gambar_anda.jpg" alt="Deskripsi Gambar" class="right-image">
+  <script>
+    // Fungsi untuk memuat harga Bitcoin
+    function loadBitcoinPrice() {
+        // Buat permintaan ke CoinGecko API
+        fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
+            .then(response => response.json())
+            .then(data => {
+                const bitcoinPrice = data.bitcoin.usd;
+                const bitcoinPriceElement = document.getElementById("bitcoin-price");
+                bitcoinPriceElement.textContent = `$${bitcoinPrice}`;
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    // Panggil fungsi pertama kali
+    loadBitcoinPrice();
+
+    // Perbarui harga Bitcoin setiap 5 detik
+    setInterval(loadBitcoinPrice, 5000); // 5000ms = 5 detik
+    </script>
+    <footer>
+        <!-- Tautan sosial dengan ikon Font Awesome -->
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+    </footer>
+    <nav>
+        <ul>
+            <li><a href="taiucingbioskop.blogspot.com"> <i class="fas fa-home"></i> HOME</a></li>
+            <li class="dropdown">
+                <a href="#"> <i class="fas fa-paper-plane"></i> AIRDROPS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"> <i class="far fa-star"></i> NEW AIRDROPS</a></li>
+                    <li><a href="#"> <i class="far fa-check-circle"></i> AIRDROPS TESTNET</a></li>
+                    <li><a href="#"> <i class="far fa-thumbs-up"></i> AIRDROPS ZEAL</a></li>
+                    <!-- Tambahkan ikon Font Awesome lainnya jika diperlukan -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 id="latestAirdrops">LATEST AIRDROPS</h1>
+            <p>cexi-io</p>
+            <div class="image-container">
+            <a href="https://airdropalert.com/cexio-10th-birthday-airdrop"><img src="gg.jpg" alt="Hunter" class="small-image"></a>
+            </div>
+            <p>taik</p>
+            <a href="https://www.contoh.com"><img src="gambar.jpg" alt="Contoh Gambar"></a>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>AIRDROOPS TESNET</h2>
+            <p>Ini adalah halaman website contoh.</p>
+            <p>Ini adalah halaman website contoh.</p>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>AIRDROOPS TELEGRAM</h2>
+            <p>Ini adalah halaman website contoh.</p>
+            <p>Ini adalah halaman website contoh.</p>
+        </section>
+    </main>
+    <footer>
+    <p>tentang blog ini</p>
+</footer>
+<footer>
+    <p>INDRA MAULANA</p>
+    <p>Email: teamddos09@gmail.com</p>
+    <p>Website: <a href="https://taiucingbioskop.blogspot.com">www.websiteanda.com</a></p>
+    <p>&copy; 2023 - AIRDROPS HUNTER</p>
+</footer>
+
+    <footer>
+    <p>Hak Cipta &copy; 2023 Website Saya</p>
+    <button id="subscribe-button">Subscribe</button>
+</footer>
+
+    <script src="https://kit.fontawesome.com/0486ccd326.js" crossorigin="anonymous"></script>
+    <script>
+    // Fungsi yang akan dijalankan saat tombol "Subscribe" diklik
+function subscribe() {
+    alert("tanks you for subscribe");
+}
+
+// Temukan tombol "Subscribe" berdasarkan ID
+const subscribeButton = document.getElementById("subscribe-button");
+
+// Tambahkan event listener untuk menangani klik tombol "Subscribe"
+subscribeButton.addEventListener("click", subscribe);
+
+        // Script JavaScript unik untuk pesan pop-up
+        const latestAirdrops = document.getElementById("latestAirdrops");
+
+        latestAirdrops.addEventListener("click", function() {
+            alert("Selamat datang di halaman LATEST AIRDROPS!");
+        });
+    </script>
+</body>
+</html>
